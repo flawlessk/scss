@@ -1,3 +1,7 @@
+@import './reset.scss';
+@import './fonts.scss';
+
+
 // Variable size
 $size01: 30px;
 $size02: 40px;
@@ -12,6 +16,9 @@ $size03: 50px;
         display: $first;
         justify-content: $second;
 }
+@mixin fonts ($font) {
+        font-family: $font;
+}
 // SCSS styles
     .container {
         @extend %container;
@@ -23,6 +30,7 @@ $size03: 50px;
              .navbar-ul li{
                 display: inline-block;
                 padding: 0 70px;
+                @include fonts('Archy EDT')
              }
                  .navbar-ul a{
                      text-decoration: none;
@@ -33,6 +41,10 @@ $size03: 50px;
          .more{
             padding: 80px 0 $size02 415px;
             font-size: 24px;
+            @include fonts('Archy EDT')
+         }
+         .rowp{
+            @include fonts('Pierre Dingbats')
          }
         footer {
             @include flex(flex,space-around);
@@ -45,6 +57,7 @@ $size03: 50px;
              p{
                  color: white;
                  font-size: 13px;
+                 @include fonts('Archy EDT')
              }
              .contacts, .direction, .logos {
                  padding-top: $size03;
@@ -54,16 +67,20 @@ $size03: 50px;
     h2 {
         padding: 138px 0 67px 0;
         font-size: $size02;
+        @include fonts('Acumin Pro')
     }
     h3 {
         padding: 138px 0 67px 0;
         font-size: $size02;
+        @include fonts('Archy EDT')
     }
     h4 {
         padding: $size01 0 $size02 0;
         font-size: $size01;
+        @include fonts('Archy EDT')
     }
     h5 {
         padding: 55px 715px;
         font-size: $size01;
+        @include fonts('Archy EDT')
     }
