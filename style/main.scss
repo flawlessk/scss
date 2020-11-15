@@ -1,3 +1,60 @@
-h1{
-    background: red;
-}
+// SCSS styles
+    .container {
+        max-width: 1640px;
+        width: 100%;
+        margin: 50px 140px;
+         header {
+            max-width: 1640px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+         }
+             .navbar-ul li{
+                display: inline-block;
+                padding: 0 70px;
+             }
+                 .navbar-ul a{
+                     text-decoration: none;
+                 }
+         .first-row, .second-row {
+            display: flex;
+            justify-content: space-around;
+         }
+         .more{
+            padding: 80px 0 40px 415px;
+            font-size: 24px;
+         }
+        footer {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1940px;
+            width: 100%;
+            height: 207px;
+            background: #333;
+            margin-left: -150px;
+            padding-right: 150px;
+             p{
+                 color: white;
+                 font-size: 13px;
+             }
+             .contacts, .direction, .logos {
+                 padding-top: 50px;
+             }
+        }
+    }
+    h2 {
+        padding: 138px 0 67px 0;
+        font-size: 40px;
+    }
+    h3 {
+        padding: 138px 0 67px 0;
+        font-size: 40px;
+    }
+    h4 {
+        padding: 30px 0 40px 0;
+        font-size: 30px;
+    }
+    h5 {
+        padding: 55px 715px;
+        font-size: 30px;
+    }
